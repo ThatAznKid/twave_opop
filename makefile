@@ -1,8 +1,8 @@
-start:
-	gcc stat.c
+stat.o: stat.c
+	gcc stat.c -o stat.o
 
-run: a.out
-	./a.out
+run: stat.o
+	./stat.o
 
 clean:
-	rm a.out
+	rm stat.o
